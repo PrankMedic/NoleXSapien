@@ -1,0 +1,27 @@
+[
+  {
+    "text": "Đây",
+    "startMs": 0,
+    "endMs": 800
+  },
+  {
+    "text": "là",
+    "startMs": 800,
+    "endMs": 1600
+  },
+  {
+    "text": "dữ",
+    "startMs": 1600,
+    "endMs": 2400
+  },
+  {
+    "text": "liệu",
+    "startMs": 2400,
+    "endMs": 3200
+  },
+  {
+    "text": "mẫu.",
+    "startMs": 3200,
+    "endMs": 4000
+  }
+]
