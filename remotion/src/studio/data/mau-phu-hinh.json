@@ -1,0 +1,261 @@
+{
+  "audio": "",
+  "video": "",
+  "brand": "Dữ liệu mẫu",
+  "notice": "Mẫu phi y khoa · Không có giọng thật",
+  "words": [
+    {
+      "text": "Đây",
+      "startMs": 0,
+      "endMs": 1000
+    },
+    {
+      "text": "là",
+      "startMs": 1000,
+      "endMs": 2000
+    },
+    {
+      "text": "nội",
+      "startMs": 2000,
+      "endMs": 3000
+    },
+    {
+      "text": "dung",
+      "startMs": 3000,
+      "endMs": 4000
+    },
+    {
+      "text": "mẫu",
+      "startMs": 4000,
+      "endMs": 5000
+    },
+    {
+      "text": "Số",
+      "startMs": 5000,
+      "endMs": 6000
+    },
+    {
+      "text": "lượng",
+      "startMs": 6000,
+      "endMs": 7000
+    },
+    {
+      "text": "là",
+      "startMs": 7000,
+      "endMs": 8000
+    },
+    {
+      "text": "hai",
+      "startMs": 8000,
+      "endMs": 9000
+    },
+    {
+      "text": "Danh",
+      "startMs": 9000,
+      "endMs": 10000
+    },
+    {
+      "text": "sách",
+      "startMs": 10000,
+      "endMs": 11000
+    },
+    {
+      "text": "gồm",
+      "startMs": 11000,
+      "endMs": 12000
+    },
+    {
+      "text": "giấy",
+      "startMs": 12000,
+      "endMs": 13000
+    },
+    {
+      "text": "mực",
+      "startMs": 13000,
+      "endMs": 14000
+    },
+    {
+      "text": "So",
+      "startMs": 14000,
+      "endMs": 15000
+    },
+    {
+      "text": "sánh",
+      "startMs": 15000,
+      "endMs": 16000
+    },
+    {
+      "text": "sáng",
+      "startMs": 16000,
+      "endMs": 17000
+    },
+    {
+      "text": "với",
+      "startMs": 17000,
+      "endMs": 18000
+    },
+    {
+      "text": "tối",
+      "startMs": 18000,
+      "endMs": 19000
+    },
+    {
+      "text": "Các",
+      "startMs": 19000,
+      "endMs": 20000
+    },
+    {
+      "text": "bước",
+      "startMs": 20000,
+      "endMs": 21000
+    },
+    {
+      "text": "vẽ",
+      "startMs": 21000,
+      "endMs": 22000
+    },
+    {
+      "text": "rồi",
+      "startMs": 22000,
+      "endMs": 23000
+    },
+    {
+      "text": "tô",
+      "startMs": 23000,
+      "endMs": 24000
+    },
+    {
+      "text": "Biểu",
+      "startMs": 24000,
+      "endMs": 25000
+    },
+    {
+      "text": "đồ",
+      "startMs": 25000,
+      "endMs": 26000
+    },
+    {
+      "text": "mẫu",
+      "startMs": 26000,
+      "endMs": 27000
+    },
+    {
+      "text": "là",
+      "startMs": 27000,
+      "endMs": 28000
+    },
+    {
+      "text": "hai",
+      "startMs": 28000,
+      "endMs": 29000
+    }
+  ],
+  "segments": [
+    {
+      "fromMs": 0,
+      "toMs": 29000
+    }
+  ],
+  "face": {
+    "x": 0.5,
+    "y": 0.28
+  },
+  "beats": [
+    {
+      "atPhrase": "Đây",
+      "untilPhrase": "mẫu",
+      "mode": "full",
+      "content": {
+        "kind": "word",
+        "text": "Nội dung mẫu"
+      }
+    },
+    {
+      "atPhrase": "Số lượng",
+      "untilPhrase": "hai",
+      "mode": "card",
+      "content": {
+        "kind": "number",
+        "text": "Số lượng mẫu",
+        "value": 2,
+        "spoken": "hai"
+      }
+    },
+    {
+      "atPhrase": "Danh sách",
+      "untilPhrase": "mực",
+      "mode": "over",
+      "content": {
+        "kind": "list",
+        "text": "Vật liệu mẫu",
+        "items": [
+          {
+            "text": "Giấy",
+            "atPhrase": "giấy"
+          },
+          {
+            "text": "Mực",
+            "atPhrase": "mực"
+          }
+        ]
+      }
+    },
+    {
+      "atPhrase": "So sánh",
+      "untilPhrase": "tối",
+      "mode": "cover",
+      "content": {
+        "kind": "compare",
+        "text": "So sánh mẫu",
+        "items": [
+          {
+            "text": "Sáng",
+            "atPhrase": "sáng"
+          },
+          {
+            "text": "Tối",
+            "atPhrase": "tối"
+          }
+        ]
+      }
+    },
+    {
+      "atPhrase": "Các bước",
+      "untilPhrase": "tô",
+      "mode": "card",
+      "content": {
+        "kind": "steps",
+        "text": "Các bước mẫu",
+        "items": [
+          {
+            "text": "Vẽ",
+            "atPhrase": "vẽ"
+          },
+          {
+            "text": "Tô",
+            "atPhrase": "tô"
+          }
+        ]
+      }
+    },
+    {
+      "atPhrase": "Biểu đồ",
+      "untilPhrase": "hai",
+      "mode": "cover",
+      "content": {
+        "kind": "bars",
+        "text": "Biểu đồ mẫu",
+        "items": [
+          {
+            "text": "Mẫu",
+            "atPhrase": "mẫu",
+            "nth": 1,
+            "value": 2,
+            "spoken": "hai"
+          }
+        ]
+      },
+      "untilNth": 1
+    }
+  ]
+}

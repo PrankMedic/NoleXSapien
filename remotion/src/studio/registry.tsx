@@ -1,9 +1,11 @@
 import { Composition } from 'remotion';
 import { framesOf } from '../formats/timeline';
 import * as Formats from './Formats';
+import { ThuyMac, PhuHinh, type ThuyMacProps, type PhuHinhProps } from './InkAndOverlay';
 import type * as Props from './types';
 
 type FormatProps = {
+  ThuyMac: ThuyMacProps; PhuHinh: PhuHinhProps;
   KineticType: Props.KineticTypeProps; Mechanism: Props.MechanismProps;
   ChartStory: Props.ChartStoryProps; Versus: Props.VersusProps;
   MythFact: Props.MythFactProps; ChatQA: Props.ChatQAProps;
@@ -27,6 +29,8 @@ for (const entry of entries) {
 const Entry = ({ entry }: { entry: StudioEntry }) => {
   const common = { id: entry.id, width: 1080, height: 1920, fps: 30, durationInFrames: framesOf(entry.props.segments) };
   switch (entry.format) {
+    case 'ThuyMac': return <Composition {...common} component={ThuyMac} defaultProps={entry.props} />;
+    case 'PhuHinh': return <Composition {...common} component={PhuHinh} defaultProps={entry.props} />;
     case 'KineticType': return <Composition {...common} component={Formats.KineticType} defaultProps={entry.props} />;
     case 'Mechanism': return <Composition {...common} component={Formats.Mechanism} defaultProps={entry.props} />;
     case 'ChartStory': return <Composition {...common} component={Formats.ChartStory} defaultProps={entry.props} />;

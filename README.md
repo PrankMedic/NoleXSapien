@@ -2,7 +2,7 @@
 
 *Nô lệ suy tư.* Bộ skill Claude Code làm nội dung sức khoẻ, từ tra cứu PubMed đến video.
 
-Bộ này gồm 7 skill: bản tin y khoa từ toàn văn, kiểm chứng nguồn, chọn định dạng, ảnh Flow kèm slide, gọi Codex, gọi Antigravity và gọi Gemini. Kèm script chuẩn bị giọng, dò nói vấp, TTS, kiểm số và dự án Remotion độc lập. Không có dữ kiện sản phẩm điền sẵn.
+Bộ này gồm 13 skill: bản tin y khoa từ toàn văn, kiểm chứng nguồn, chọn định dạng, ảnh Flow kèm slide, video thuỷ mặc, video phủ hình, gọi Codex, gọi Antigravity, gọi Gemini và 4 skill GSAP. Kèm script chuẩn bị giọng, dò nói vấp, TTS, kiểm số và dự án Remotion độc lập. Không có dữ kiện sản phẩm điền sẵn.
 
 ## Cần cài
 
@@ -73,3 +73,26 @@ Không chạy API hoặc gửi tài liệu chỉ để thử cài đặt khi ch�
 - `agy` không trả lời hoặc log `no output produced`: yêu cầu chỉ đọc ảnh, không terminal, kiểm log; script giới hạn thời gian và tối đa ba lần. Hết giới hạn thì ghi chưa duyệt, không bỏ bảo vệ hoặc chuyển sang đăng nhập Google.
 - Thiếu model Whisper/công cụ: kiểm PATH và `WHISPER_MODEL`; không dùng đường dẫn của máy khác.
 - Không lấy được fulltext: không xem là đã đọc nghiên cứu. Ghi hạn chế và đổi bài hoặc chờ tài liệu hợp lệ.
+
+## Danh sách 13 skill
+
+| Skill | Chức năng |
+|---|---|
+| `ban-tin-y-khoa` | Bản tin từ toàn văn |
+| `kiem-chung-nguon` | Kiểm chứng nguồn |
+| `dinh-dang-video` | Review và chọn định dạng |
+| `video-minh-hoa-flow` | Ảnh Flow kết hợp slide |
+| `video-thuy-mac` | Tranh mực trên giấy theo giọng |
+| `video-phu-hinh` | Đồ hoạ theo lời trên video người nói |
+| `goi-codex` | Gọi công cụ lập trình |
+| `goi-antigravity` | Gọi công cụ duyệt hình |
+| `goi-gemini` | Gọi mô hình qua API |
+| `gsap-core` | Tween và easing |
+| `gsap-react` | Animation React và cleanup |
+| `gsap-timeline` | Chuỗi animation |
+| `gsap-utils` | Tiện ích animation |
+
+Hai composition `MauThuyMac`, `MauPhuHinh` chỉ dùng dữ liệu mẫu phi y khoa.
+Xem schema và quy trình trong hai skill mới. `scripts/kiem_phu_hinh.py <du-lieu.json>` kiểm mốc, số, vùng mặt và thời lượng full; mã thoát 1 khi có lỗi, 2 khi không đọc được dữ liệu.
+
+Kiểm dữ liệu mẫu phủ hình: `python3 scripts/kiem_phu_hinh.py remotion/src/studio/data/mau-phu-hinh.json`. Mẫu minh hoạ cả bốn mode và sáu kiểu đồ hoạ; thời gian lời giả lập, không có giọng thật.

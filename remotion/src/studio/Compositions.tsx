@@ -4,6 +4,8 @@ import { Composition, Folder, Still } from 'remotion';
 import { framesOf } from '../formats/timeline';
 import { CarouselSlide, ChartStory, ChatQA, Journey, KineticType, Mechanism, MythFact, NewsDesk, PodcastWave, Versus } from './Formats';
 import { base, carousel, chart, chat, journey, kinetic, mechanism, myth, news, podcast, versus } from './data/mau';
+import { ThuyMac, PhuHinh } from './InkAndOverlay';
+import { thuyMac, phuHinh } from './data/mau-moi';
 import { DataCompositions } from './registry';
 
 const video = { width: 1080, height: 1920, fps: 30, durationInFrames: framesOf(base.segments) };
@@ -19,5 +21,7 @@ export const StudioCompositions = () => <Folder name="Dinh-dang-moi-2">
   <Composition {...video} id="MauPodcastWave" component={PodcastWave} defaultProps={podcast} />
   <Still id="MauCarouselSlide" component={CarouselSlide} defaultProps={carousel} width={1080} height={1350} />
   <Composition {...video} id="MauBanTin" component={BanTinNghienCuu} defaultProps={bulletin} />
+  <Composition {...video} durationInFrames={framesOf(thuyMac.segments)} id="MauThuyMac" component={ThuyMac} defaultProps={thuyMac} />
+  <Composition {...video} durationInFrames={framesOf(phuHinh.segments)} id="MauPhuHinh" component={PhuHinh} defaultProps={phuHinh} />
   <DataCompositions />
 </Folder>;
